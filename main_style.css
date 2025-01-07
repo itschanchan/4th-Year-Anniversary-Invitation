@@ -266,7 +266,7 @@ ul li {
 
 .playlist-description {
   flex: 1;
-  margin-left: 20px;
+  text-align: center;
 }
 
 /* Responsive Design */
