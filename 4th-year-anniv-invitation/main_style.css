@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
+
+/* General Reset and Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f8ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 0 15px;
+}
+
+/* Header Styles */
+.top-header {
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.logo {
+  font-family: 'Ms Madi', cursive;
+  color: #2596be;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.top-header h2 {
+  color: #333;
+  font-weight: 500;
+}
+
+/* Main Content Styles */
+.content {
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.container img {
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+.venue-box, .activities-box {
+  flex: 1;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.venue-box h1, .activities-box h2 {
+  margin-bottom: 10px;
+}
+
+/* Typography */
+h1, h2, h3 {
+  margin: 10px 0;
+}
+
+h3 {
+  font-weight: 400;
+}
+
+/* List Styling */
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 0;
+  text-align: left;
+}
+
+ul li {
+  margin: 5px 0;
+}
+
+/* Letter Container */
+.letter {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.letter-button {
+  width: 150px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.letter img {
+  transition: transform 0.3s ease;
+}
+
+.letter img:hover, .letter-button:hover {
+  transform: scale(1.1);
+}
+
+/* Basic styling for the popup */
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Black with opacity */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background-color: transparent;
+  padding: 20px;
+  position: relative;
+  max-width: 80%;
+}
+
+.popup img {
+  width: 100%;
+  max-width: 450px; /* Adjust based on your image size */
+}
+
+.close {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  font-size: 30px;
+  cursor: pointer;
+  color: #fff;
+}
+
+/* Styling for the letter button */
+.letter-button {
+  cursor: pointer;
+}
+
+/* Carousel */
+.wrapper {
+  max-width: 1200px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.wrapper i {
+  top: 50%;
+  height: 46px;
+  width: 46px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  position: absolute;
+  text-align: center;
+  line-height: 46px;
+  background-color: #fff;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+.wrapper i:first-child {
+  left: -23px;
+  display: none;
+}
+
+.wrapper i:last-child {
+  right: -23px;
+}
+
+.wrapper .carousel {
+  font-size: 0px;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+
+.carousel.dragging {
+  cursor: grab;
+  scroll-behavior: auto;
+}
+
+.carousel img {
+  height: 250px;
+  object-fit: cover;
+  margin-left: 14px;
+  width: calc(100% / 3);
+}
+
+.carousel img:first-child {
+  margin-left: 0;
+}
+
+.letter_playlist_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.letter {
+  flex: 1;
+  max-width: 50%;
+}
+
+.open-letter-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.open-letter-btn:hover {
+  background-color: #0056b3;
+}
+
+.playlist {
+  flex: 1;
+  max-width: 50%;
+}
+
+.playlist_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+}
+
+.playlist-description {
+  flex: 1;
+  margin-left: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo {
+    font-size: 2.2rem;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  .venue-box, .activities-box {
+    padding: 15px;
+  }
+
+  .wrapper {
+    max-width: 100%;
+  }
+
+  .carousel img {
+    width: calc(100% / 2);
+  }
+
+  .popup-content {
+    max-width: 90%;
+  }
+
+  .popup-content img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 1.8rem;
+  }
+
+  .letter-button {
+    width: 120px;
+  }
+
+  .container {
+    flex-direction: column;
+    padding: 5px;
+  }
+
+  .venue-box, .activities-box {
+    padding: 10px;
+  }
+
+  .carousel img {
+    width: 100%;
+  }
+
+  .playlist {
+    max-width: 100%;
+  }
+
+  .playlist-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+}

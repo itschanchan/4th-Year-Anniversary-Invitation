@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
+
+/* General Reset and Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f8ff;
+}
+
+.home {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s ease-in-out;
+}
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1ebad0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  overflow: hidden;
+}
+
+#loading-screen img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Title */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Logo */
+.logo {
+  font-family: 'Ms Madi', cursive;
+  color: #2596be;
+  margin-top: 25px;
+}
+
+/* Question */
+.question {
+  color: black;
+  font-size: 1rem;
+}
+
+/* Box */
+.box {
+  background-color: #fff;
+  border: 2px solid #217b84;
+  border-radius: 10px;
+  padding: 20px;
+  width: 90%;
+  max-width: 300px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+}
+
+/* Invitation Image */
+.container-img {
+  width: 90%;
+  max-width: 250px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  align-items: center;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.container-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+/* Buttons */
+#buttons {
+  margin-top: 20px;
+}
+
+.yes-button, .no-button {
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.yes-button {
+  background-color: #2ca4c0;
+}
+
+.no-button {
+  background-color: #dc4b48;
+}
+
+.yes-button:hover {
+  background-color: #217b84;
+}
+
+.no-button:hover {
+  background-color: #c3403e;
+}
+
+/* Popup */
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0s 0.5s;
+}
+
+.popup.show {
+  display: flex;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s ease, visibility 0s 0s;
+}
+
+.popup-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 500px;
+  min-width: 250px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  overflow-y: auto;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #217b84;
+  font-weight: bold;
+}
+
+/* Form Inputs */
+form input, form textarea, form button {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #2ca4c0;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #217b84;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+  /* Home */
+  .home {
+    height: auto;
+    padding: 20px;
+  }
+
+  /* Logo */
+  .logo {
+    font-size: 2rem;
+  }
+
+  /* Box */
+  .box {
+    width: 80%;
+    max-width: 280px;
+  }
+
+  /* Image */
+  .container-img {
+    width: 80%;
+    max-width: 200px;
+  }
+
+  /* Buttons */
+  .yes-button, .no-button {
+    width: 100%;
+    padding: 12px;
+  }
+
+  /* Popup */
+  .popup-content {
+    width: 90%;
+    max-width: 450px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Title */
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  /* Box */
+  .box {
+    width: 90%;
+    max-width: 250px;
+  }
+
+  /* Image */
+  .container-img {
+    width: 90%;
+    max-width: 180px;
+  }
+
+  /* Buttons */
+  .yes-button, .no-button {
+    padding: 10px;
+  }
+
+  /* Popup */
+  .popup-content {
+    width: 90%;
+    max-width: 350px;
+  }
+}
