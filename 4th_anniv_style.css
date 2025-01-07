@@ -103,17 +103,21 @@ h1 {
 /* Buttons */
 #buttons {
   margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Ensure buttons stay in line and wrap on small screens */
 }
 
 .yes-button, .no-button {
   text-decoration: none;
   color: white;
-  padding: 6px 10px; /* Further reduced padding for smaller buttons */
+  padding: 6px 15px; /* Slightly increased padding for easier tap targets */
   border-radius: 10px;
-  margin: 8px; /* Reduced margin for closer buttons */
+  margin: 8px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  width: auto; /* Let the buttons adjust based on content */
+  width: auto;
+  min-width: 120px; /* Ensure the buttons have a minimum width */
 }
 
 .yes-button {
@@ -227,7 +231,8 @@ form button:hover {
 
   /* Buttons */
   .yes-button, .no-button {
-    padding: 10px; /* Slightly larger padding for mobile touch */
+    padding: 10px 20px; /* Adjusted padding for easier tapping */
+    min-width: 150px; /* Adjust minimum width to fit mobile */
   }
 
   /* Popup */
@@ -257,7 +262,8 @@ form button:hover {
 
   /* Buttons */
   .yes-button, .no-button {
-    padding: 8px; /* Slightly reduced padding for very small screens */
+    padding: 8px 15px; /* Slightly reduced padding for very small screens */
+    min-width: 120px; /* Maintain readability */
   }
 
   /* Popup */
