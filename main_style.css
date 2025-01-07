@@ -31,11 +31,33 @@ body {
   color: #2596be;
   font-size: 2.5rem;
   margin-bottom: 10px;
+  opacity: 0; /* Start fully transparent */
+  animation: fadeIn 2s ease-in forwards; /* Apply the fade-in effect */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Starting transparency */
+  }
+  to {
+    opacity: 1; /* Fully visible */
+  }
 }
 
 .top-header h2 {
   color: #333;
   font-weight: 500;
+  font-family: 'Roboto';
+  animation: fadeIn 2s ease-in forwards; /* Apply the fade-in effect */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Starting transparency */
+  }
+  to {
+    opacity: 1; /* Fully visible */
+  }
 }
 
 /* Main Content Styles */
@@ -44,6 +66,7 @@ body {
   max-width: 1200px;
   padding: 20px;
   margin-top: 20px;
+  text-align: center;
 }
 
 .container {
@@ -261,11 +284,11 @@ ul li {
   border-radius: 12px;
   background-color: #f9f9f9;
   flex-direction: column;
-
 }
 
 .playlist-description {
   flex: 1;
+
   text-align: center;
 }
 
