@@ -113,7 +113,7 @@ h1 {
   margin: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  width: 100%; /* Ensure buttons fill available width on mobile */
+  width: 50%; /* Ensure buttons fill available width on mobile */
 }
 
 .yes-button {
