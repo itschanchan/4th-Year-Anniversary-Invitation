@@ -9,13 +9,6 @@
   background-color: #f0f8ff;
 }
 
-body {
-  width: 100%;
-  height: 100%;
-  margin: 0; /* Removes the default body margin */
-  padding: 0; /* Removes the default body padding */
-}
-
 .home {
   text-align: center;
   display: flex;
@@ -222,14 +215,14 @@ form button:hover {
 
   /* Box */
   .box {
-    width: 100%; /* Allow box to stretch to full width */
-    max-width: none; /* Remove max-width limit */
+    width: 80%;
+    max-width: 280px;
   }
 
   /* Image */
   .container-img {
-    width: 100%; /* Allow image to stretch fully */
-    max-width: none; /* Remove max-width limit */
+    width: 80%;
+    max-width: 200px;
   }
 
   /* Buttons */
@@ -239,8 +232,8 @@ form button:hover {
 
   /* Popup */
   .popup-content {
-    width: 100%; /* Stretch the popup content */
-    max-width: none; /* Remove max-width limit */
+    width: 90%;
+    max-width: 450px;
   }
 }
 
@@ -253,13 +246,13 @@ form button:hover {
   /* Box */
   .box {
     width: 100%;
-    max-width: none; /* Remove max-width limit */
+    max-width: 500px;
   }
 
   /* Image */
   .container-img {
-    width: 100%; /* Stretch image */
-    max-width: none; /* Remove max-width limit */
+    width: 90%;
+    max-width: 180px;
   }
 
   /* Buttons */
@@ -269,7 +262,7 @@ form button:hover {
 
   /* Popup */
   .popup-content {
-    width: 100%; /* Stretch the popup content */
-    max-width: none; /* Remove max-width limit */
+    width: 90%;
+    max-width: 350px;
   }
 }
