@@ -228,7 +228,7 @@ ul li {
 
 .letter {
   flex: 1;
-  max-width: 50%;
+  max-width: 100%;
 }
 
 .open-letter-btn {
@@ -247,19 +247,21 @@ ul li {
 
 .playlist {
   flex: 1;
-  max-width: 50%;
+  max-width: 100%;
 }
 
 .playlist_container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
+  width: 45%;
   margin: 0 auto;
   padding: 20px;
   border: 2px solid #ddd;
   border-radius: 12px;
   background-color: #f9f9f9;
+  flex-direction: column;
+
 }
 
 .playlist-description {
