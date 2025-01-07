@@ -110,10 +110,10 @@ h1 {
   color: white;
   padding: 12px 15px; /* Adjusted padding for better touch target */
   border-radius: 5px;
-  margin: 10px;
+  margin: 20px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  width: 50%; /* Ensure buttons fill available width on mobile */
+  width: 10px; /* Ensure buttons fill available width on mobile */
 }
 
 .yes-button {
