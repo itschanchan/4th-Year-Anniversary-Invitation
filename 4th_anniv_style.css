@@ -9,13 +9,20 @@
   background-color: #f0f8ff;
 }
 
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0; /* Removes the default body margin */
+  padding: 0; /* Removes the default body padding */
+}
+
 .home {
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 1000vh;
+  height: 100vh;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -108,9 +115,9 @@ h1 {
 .yes-button, .no-button {
   text-decoration: none;
   color: white;
-  padding: 8px 12px; /* Smaller padding for a more compact button */
-  border-radius: 5px;
-  margin: 10px; /* Reduced margin for closer buttons */
+  padding: 6px 10px; /* Further reduced padding for smaller buttons */
+  border-radius: 10px;
+  margin: 8px; /* Reduced margin for closer buttons */
   cursor: pointer;
   transition: background-color 0.3s ease;
   width: auto; /* Let the buttons adjust based on content */
@@ -215,25 +222,25 @@ form button:hover {
 
   /* Box */
   .box {
-    width: 80%;
-    max-width: 280px;
+    width: 100%; /* Allow box to stretch to full width */
+    max-width: none; /* Remove max-width limit */
   }
 
   /* Image */
   .container-img {
-    width: 80%;
-    max-width: 200px;
+    width: 100%; /* Allow image to stretch fully */
+    max-width: none; /* Remove max-width limit */
   }
 
   /* Buttons */
   .yes-button, .no-button {
-    padding: 12px; /* Increased padding for mobile touch */
+    padding: 10px; /* Slightly larger padding for mobile touch */
   }
 
   /* Popup */
   .popup-content {
-    width: 90%;
-    max-width: 450px;
+    width: 100%; /* Stretch the popup content */
+    max-width: none; /* Remove max-width limit */
   }
 }
 
@@ -245,24 +252,24 @@ form button:hover {
 
   /* Box */
   .box {
-    width: 90%;
-    max-width: 250px;
+    width: 100%;
+    max-width: none; /* Remove max-width limit */
   }
 
   /* Image */
   .container-img {
-    width: 90%;
-    max-width: 180px;
+    width: 100%; /* Stretch image */
+    max-width: none; /* Remove max-width limit */
   }
 
   /* Buttons */
   .yes-button, .no-button {
-    padding: 10px; /* Slightly reduced padding for very small screens */
+    padding: 8px; /* Slightly reduced padding for very small screens */
   }
 
   /* Popup */
   .popup-content {
-    width: 90%;
-    max-width: 350px;
+    width: 100%; /* Stretch the popup content */
+    max-width: none; /* Remove max-width limit */
   }
 }
