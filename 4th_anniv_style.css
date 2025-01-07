@@ -108,11 +108,12 @@ h1 {
 .yes-button, .no-button {
   text-decoration: none;
   color: white;
-  padding: 10px 15px;
+  padding: 12px 15px; /* Adjusted padding for better touch target */
   border-radius: 5px;
   margin: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  width: 100%; /* Ensure buttons fill available width on mobile */
 }
 
 .yes-button {
@@ -226,8 +227,7 @@ form button:hover {
 
   /* Buttons */
   .yes-button, .no-button {
-    width: 100%;
-    padding: 12px;
+    padding: 12px; /* Increased padding for mobile touch */
   }
 
   /* Popup */
@@ -257,7 +257,7 @@ form button:hover {
 
   /* Buttons */
   .yes-button, .no-button {
-    padding: 10px;
+    padding: 10px; /* Slightly reduced padding for very small screens */
   }
 
   /* Popup */
